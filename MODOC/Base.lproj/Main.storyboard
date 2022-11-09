@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="MODOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_botLayer" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-ph-muz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_rest_frame_01" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-xZ-ebJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_topLayer" translatesAutoresizingMaskIntoConstraints="NO" id="zFZ-2A-dMt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O7W-xZ-ebJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3HK-Tr-az9"/>
+                            <constraint firstAttribute="bottom" secondItem="ybK-ph-muz" secondAttribute="bottom" id="4rB-Ma-OVk"/>
+                            <constraint firstAttribute="bottom" secondItem="O7W-xZ-ebJ" secondAttribute="bottom" id="BVZ-WO-T9G"/>
+                            <constraint firstItem="zFZ-2A-dMt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C8R-pz-sd0"/>
+                            <constraint firstItem="O7W-xZ-ebJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GOy-mt-Ivm"/>
+                            <constraint firstAttribute="bottom" secondItem="zFZ-2A-dMt" secondAttribute="bottom" id="W2F-h1-ayI"/>
+                            <constraint firstItem="O7W-xZ-ebJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZlH-le-RSQ"/>
+                            <constraint firstItem="ybK-ph-muz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jze-zC-QSv"/>
+                            <constraint firstItem="ybK-ph-muz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kbq-7Z-sdf"/>
+                            <constraint firstItem="ybK-ph-muz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sv4-bR-LHX"/>
+                            <constraint firstItem="zFZ-2A-dMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uqX-ad-EW5"/>
+                            <constraint firstItem="zFZ-2A-dMt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wkr-Qn-tWr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceImage" destination="O7W-xZ-ebJ" id="6u9-YG-qL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.488151658767762" y="3.0769230769230766"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="modok_face_botLayer" width="2732" height="2048"/>
+        <image name="modok_face_rest_frame_01" width="2732" height="2048"/>
+        <image name="modok_face_topLayer" width="2732" height="2048"/>
+    </resources>
+</document>
