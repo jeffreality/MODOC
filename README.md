@@ -5,6 +5,9 @@
 * **O**nly to
 * **C**hatting
 
+# KNOWN ISSUE
+iOS 16 does not work, but iOS 15 does. This is an issue with potentially the Speech API. A radar has been filed, but until then this code does not work if run on iOS 16 or higher.
+
 # TL;DR
 Demo code for an interactive iOS chatbot built without web services (fully local) in Swift
 
