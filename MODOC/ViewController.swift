@@ -16,13 +16,12 @@ class ViewController: UIViewController {
     var recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
     var speechSynthesizer = AVSpeechSynthesizer()
-    var talkString: String = ""
-    var hasStartedTalking: Bool = false
-    var hasFinishedTalking: Bool = false
-    var talkingTimer: Timer = Timer()
-    var pauseTime: TimeInterval = 0.8
     var node: AVAudioInputNode?
     var locale: String = "us-EN"
+    
+    var talkString: String = ""
+    var talkingTimer: Timer?
+    var pauseTime: TimeInterval = 0.8
     
     // Dialogue (conversational management)
     var goodbyeHeard: Bool = true // when true, can only be woken with "Hello MODOC"
@@ -44,8 +43,6 @@ class ViewController: UIViewController {
         speechRecognizer.delegate = self
         speechSynthesizer.delegate = self
         
-        speechSynthesizer.usesApplicationAudioSession = true
-        
         requestTranscribePermissions()
         
         startAudio()
@@ -53,10 +50,6 @@ class ViewController: UIViewController {
         FaceManager.shared.faceImage = faceImage
         
         faceAnimationTimer = Timer.scheduledTimer(timeInterval: faceManager.animTime, target: faceManager, selector: #selector(faceManager.animateFace), userInfo: nil, repeats: true)
-        
-        DispatchQueue.main.async {
-            self.startListening()
-        }
         
     }
 

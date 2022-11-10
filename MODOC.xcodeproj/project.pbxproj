@@ -307,13 +307,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MODOC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MODOC;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "MODOC needs access to the microphone so you can talk to her.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MODOC uses speech recognition to understand what you are saying to her.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "MODOC needs access to the microphone so you can talk to him.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MODOC uses speech recognition to understand what you are saying to him.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,13 +339,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MODOC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MODOC;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "MODOC needs access to the microphone so you can talk to her.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MODOC uses speech recognition to understand what you are saying to her.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "MODOC needs access to the microphone so you can talk to him.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MODOC uses speech recognition to understand what you are saying to him.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,12 +23,16 @@ extension ViewController {
     }
     
     func startAudio() {
-        print ("start listening to audio")
+        print ("start listening for audio")
         let audioSession = AVAudioSession.sharedInstance()
         do {
             try audioSession.setCategory(AVAudioSession.Category.playAndRecord)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
             try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+            
+            DispatchQueue.main.async {
+                self.startListening()
+            }
         } catch {
             print ("an audio session error has occurred")
         }
@@ -38,7 +42,7 @@ extension ViewController {
         UIView.animate(withDuration: 1.0) {
             self.subtitleLabel?.isHidden = true
         }
-        print ("startListening")
+        print ("start listening")
         if self.speechRecognizer.isAvailable {
             // Use the speech recognizer
             do {
@@ -50,11 +54,11 @@ extension ViewController {
     }
     
     func startRecording() throws {
-        print ("startRecording")
+        print ("start recording")
         node = audioEngine.inputNode
         let recordingFormat = node?.outputFormat(forBus: 0)
         
-        self.recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         
         node?.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
             self.recognitionRequest.append(buffer)
@@ -65,42 +69,44 @@ extension ViewController {
         
         recognitionTask = speechRecognizer.recognitionTask(with: self.recognitionRequest) { result, error in
             if let result = result {
-                if !self.hasStartedTalking {
-                    print ("hasStartedTalking")
-                    self.hasStartedTalking = true
-                    
-                    self.talkingTimer = Timer.scheduledTimer(timeInterval: self.pauseTime, target: self, selector: #selector(self.didFinishTalk), userInfo: nil, repeats: false)
-                } else {
-                    print ("timer restart")
-                    self.talkingTimer.invalidate()
-                    self.talkingTimer = Timer.scheduledTimer(timeInterval: self.pauseTime, target: self, selector: #selector(self.didFinishTalk), userInfo: nil, repeats: false)
-                }
-                
-                print ("addingToTalkString")
                 self.talkString = result.bestTranscription.formattedString
-                
-                if self.hasFinishedTalking {
-                    print ("hasFinishedTalking")
-                    self.talkingTimer.invalidate()
-                    self.hasFinishedTalking = false
-                    self.hasStartedTalking = false
-                }
-                
+            }
+            
+            // after a 0.8 pause, consider the sentence completed
+            self.pauseTillTalkingIsDone()
+
+            
+        }
+    }
+    
+    func pauseTillTalkingIsDone() {
+        DispatchQueue.main.async {
+            self.talkingTimer?.invalidate()
+            self.talkingTimer = nil
+            
+            self.talkingTimer = Timer.scheduledTimer(timeInterval: self.pauseTime, target: self, selector: #selector(self.checkIfFinishedTalking), userInfo: nil, repeats: false)
+        }
+    }
+    
+    @objc func checkIfFinishedTalking() {
+        print ("talking timer fired")
+        if self.talkString == "" {
+            // continue listening for a response
+            pauseTillTalkingIsDone()
+        } else {
+            // stop listening and process what was said
+            DispatchQueue.main.async {
+                self.talkingTimer?.invalidate()
+                self.talkingTimer = nil
+                self.stopListening()
+                self.sendUserMessage(str: self.talkString.lowercased())
+                self.talkString = ""
             }
         }
     }
     
-    @objc func didFinishTalk() {
-        print ("didFinishTalk")
-        hasStartedTalking = false
-        hasFinishedTalking = true
-        self.sendUserMessage(str: talkString.lowercased())
-        self.cancelRecording()
-        talkString = ""
-    }
-    
-    func cancelRecording() {
-        print ("cancelRecording")
+    func stopListening() {
+        print ("stop recording/listening")
         node?.removeTap(onBus: 0)
         audioEngine.stop()
         recognitionRequest.endAudio()
