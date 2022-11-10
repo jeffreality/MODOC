@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MODOCViewController.swift
 //  MODOC
 //
 //  Created by Jeffrey Berthiaume on 10/9/22.
@@ -8,7 +8,7 @@
 import UIKit
 import Speech
 
-class ViewController: UIViewController {
+class MODOCViewController: UIViewController {
     
     // Speech recognition
     let audioEngine = AVAudioEngine()

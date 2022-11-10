@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S9F-tO-4lv">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MODOC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="MODOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MODOC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MODOCViewController" customModule="MODOC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_botLayer" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-ph-muz">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_rest_frame_01" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-xZ-ebJ">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modok_face_topLayer" translatesAutoresizingMaskIntoConstraints="NO" id="zFZ-2A-dMt">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed Captioning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMW-UL-wun">
-                                <rect key="frame" x="20" y="672" width="353" height="48"/>
+                                <rect key="frame" x="20" y="213" width="812" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,6 +54,7 @@
                             <constraint firstItem="zFZ-2A-dMt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wkr-Qn-tWr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wPj-JN-KN0"/>
                     <connections>
                         <outlet property="faceImage" destination="O7W-xZ-ebJ" id="6u9-YG-qL6"/>
                         <outlet property="subtitleLabel" destination="DMW-UL-wun" id="oCx-KC-6vU"/>
@@ -60,12 +62,280 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77.488151658767762" y="3.0769230769230766"/>
+            <point key="canvasLocation" x="-211" y="2224"/>
+        </scene>
+        <!--GOODBYE-->
+        <scene sceneID="fFv-r2-5ks">
+            <objects>
+                <viewController title="GOODBYE" id="Afz-dO-2fg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iU0-5w-ieu">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="lGP-m5-ckU">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="CDO-Sa-lKH">
+                                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="XcQ-dt-rVz">
+                                                <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XcQ-dt-rVz" secondAttribute="height" multiplier="1:1" constant="1" id="0Cf-bw-RPc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-69-38R">
+                                                <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="GOODBYE ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" means you need to leave  go away">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99941999999999998" green="0.98555000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llz-ZN-74Q">
+                                                <rect key="frame" x="590.66666666666663" y="318" width="241.33333333333337" height="41"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="GO TO INTERVIEW &gt;">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="XG2-m1-8dd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="XPl-99-KV8"/>
+                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UnN-69-38R" firstAttribute="leading" secondItem="XPl-99-KV8" secondAttribute="leading" id="13r-j5-NN4"/>
+                                            <constraint firstItem="llz-ZN-74Q" firstAttribute="bottom" secondItem="XPl-99-KV8" secondAttribute="bottom" id="3Io-jp-pKY"/>
+                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="bottom" secondItem="XPl-99-KV8" secondAttribute="bottom" id="7fF-2S-eeO"/>
+                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="centerX" secondItem="XPl-99-KV8" secondAttribute="centerX" id="Oeg-rZ-Jwf"/>
+                                            <constraint firstItem="XPl-99-KV8" firstAttribute="bottom" secondItem="UnN-69-38R" secondAttribute="bottom" id="POy-eH-9K7"/>
+                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="top" secondItem="XPl-99-KV8" secondAttribute="top" id="Uf0-6k-aUE"/>
+                                            <constraint firstItem="XPl-99-KV8" firstAttribute="trailing" secondItem="UnN-69-38R" secondAttribute="trailing" id="o6S-jR-YDN"/>
+                                            <constraint firstItem="XPl-99-KV8" firstAttribute="trailing" secondItem="llz-ZN-74Q" secondAttribute="trailing" constant="20" id="pNB-6Q-m7s"/>
+                                            <constraint firstItem="llz-ZN-74Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XcQ-dt-rVz" secondAttribute="trailing" constant="8" symbolic="YES" id="x5k-jW-lTw"/>
+                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="centerY" secondItem="XPl-99-KV8" secondAttribute="centerY" id="yFt-8m-Yes"/>
+                                            <constraint firstItem="UnN-69-38R" firstAttribute="top" secondItem="XPl-99-KV8" secondAttribute="top" id="yUS-eu-XQ2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="fXF-TT-Iin"/>
+                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hm7-Yc-9lv"/>
+                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YT1-ep-Lpw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWm-E6-5Ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="1169"/>
+        </scene>
+        <!--HELLO MODOC-->
+        <scene sceneID="ZBn-pE-xyh">
+            <objects>
+                <viewController title="HELLO MODOC" id="G6d-a0-hoe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bai-eP-LZq">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="uuL-Fw-W9D">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="T0Q-lm-2AN">
+                                        <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="T0Q-lm-2AN" secondAttribute="height" multiplier="1:1" constant="1" id="ixL-ry-7hY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBo-uD-hzA">
+                                        <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="to begin, simply say:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="HELLO MODOC">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-eD-rCl">
+                                        <rect key="frame" x="730" y="318" width="102" height="41"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="NEXT &gt;">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Afz-dO-2fg" kind="show" animates="NO" id="xe9-hG-iLX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Zku-qB-3Op"/>
+                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vBo-uD-hzA" firstAttribute="leading" secondItem="Zku-qB-3Op" secondAttribute="leading" id="5Li-oq-stx"/>
+                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="centerY" secondItem="Zku-qB-3Op" secondAttribute="centerY" id="6fh-II-u4I"/>
+                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="bottom" secondItem="Zku-qB-3Op" secondAttribute="bottom" id="JkS-Mf-Oeo"/>
+                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="trailing" secondItem="5RO-eD-rCl" secondAttribute="trailing" constant="20" id="YmY-wH-Jmx"/>
+                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="trailing" secondItem="vBo-uD-hzA" secondAttribute="trailing" id="heF-ag-jhL"/>
+                                    <constraint firstItem="5RO-eD-rCl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T0Q-lm-2AN" secondAttribute="trailing" constant="8" symbolic="YES" id="iqs-0x-YEh"/>
+                                    <constraint firstItem="vBo-uD-hzA" firstAttribute="top" secondItem="Zku-qB-3Op" secondAttribute="top" id="lsw-2J-zlg"/>
+                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="centerX" secondItem="Zku-qB-3Op" secondAttribute="centerX" id="r5i-p5-Gjy"/>
+                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="top" secondItem="Zku-qB-3Op" secondAttribute="top" id="rd1-4m-T4A"/>
+                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="bottom" secondItem="vBo-uD-hzA" secondAttribute="bottom" id="wIW-pd-7dD"/>
+                                    <constraint firstItem="5RO-eD-rCl" firstAttribute="bottom" secondItem="Zku-qB-3Op" secondAttribute="bottom" id="x00-er-aj6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i2H-nP-8i3"/>
+                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Zr-lk-fWW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ype-0H-K6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="1169"/>
+        </scene>
+        <!--Welcome to HYDRA-->
+        <scene sceneID="JTl-tk-TKM">
+            <objects>
+                <viewController title="Welcome to HYDRA" id="S9F-tO-4lv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJX-bl-N72">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="mLY-Ca-2P6">
+                                <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mLY-Ca-2P6" secondAttribute="height" multiplier="1:1" constant="1" id="Y9P-GQ-y82"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK7-du-q3E">
+                                <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to ">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="HYDRA">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  MODOC will be interviewing you  to see if you would be a good fit  for this organization.">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-pa-H6c">
+                                <rect key="frame" x="672" y="318" width="160" height="41"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CONTINUE &gt;">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="G6d-a0-hoe" kind="show" animates="NO" id="2TV-Yo-qBn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vU3-H1-Ieg"/>
+                        <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="trailing" secondItem="MK7-du-q3E" secondAttribute="trailing" id="17U-aq-lXk"/>
+                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="centerY" secondItem="vU3-H1-Ieg" secondAttribute="centerY" id="2dt-0B-fnK"/>
+                            <constraint firstItem="e0p-pa-H6c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mLY-Ca-2P6" secondAttribute="trailing" constant="8" symbolic="YES" id="32s-jt-CJK"/>
+                            <constraint firstItem="MK7-du-q3E" firstAttribute="top" secondItem="vU3-H1-Ieg" secondAttribute="top" id="5FB-oj-xTx"/>
+                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="trailing" secondItem="e0p-pa-H6c" secondAttribute="trailing" constant="20" id="6Yw-tP-NYC"/>
+                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="centerX" secondItem="vU3-H1-Ieg" secondAttribute="centerX" id="WgN-g8-MKM"/>
+                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="bottom" secondItem="MK7-du-q3E" secondAttribute="bottom" id="eRk-we-XgT"/>
+                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="bottom" secondItem="vU3-H1-Ieg" secondAttribute="bottom" id="nZg-s5-xw9"/>
+                            <constraint firstItem="MK7-du-q3E" firstAttribute="leading" secondItem="vU3-H1-Ieg" secondAttribute="leading" id="rz2-Bq-5cj"/>
+                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="top" secondItem="vU3-H1-Ieg" secondAttribute="top" id="twW-qv-ioY"/>
+                            <constraint firstItem="e0p-pa-H6c" firstAttribute="bottom" secondItem="vU3-H1-Ieg" secondAttribute="bottom" id="yR3-gt-FaS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVR-Vq-wAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="1169"/>
         </scene>
     </scenes>
     <resources>
+        <image name="hydra" width="955" height="954"/>
         <image name="modok_face_botLayer" width="2732" height="2048"/>
         <image name="modok_face_rest_frame_01" width="2732" height="2048"/>
         <image name="modok_face_topLayer" width="2732" height="2048"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

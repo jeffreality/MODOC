@@ -1,5 +1,5 @@
 //
-//  ViewController+SpeechRecognition.swift
+//  MODOCViewController+SpeechRecognition.swift
 //  MODOC
 //
 //  Created by Jeffrey Berthiaume on 11/9/22.
@@ -8,7 +8,7 @@
 import UIKit
 import Speech
 
-extension ViewController {
+extension MODOCViewController {
     
     func requestTranscribePermissions() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -116,7 +116,7 @@ extension ViewController {
 }
 
 
-extension ViewController: AVSpeechSynthesizerDelegate {
+extension MODOCViewController: AVSpeechSynthesizerDelegate {
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
             FaceManager.shared.faceType = .rest
@@ -137,6 +137,6 @@ extension ViewController: AVSpeechSynthesizerDelegate {
     }
 }
 
-extension ViewController: SFSpeechRecognizerDelegate {
+extension MODOCViewController: SFSpeechRecognizerDelegate {
     
 }

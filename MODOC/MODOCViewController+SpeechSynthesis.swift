@@ -1,5 +1,5 @@
 //
-//  ViewController+SpeechSynthesis.swift
+//  MODOCViewController+SpeechSynthesis.swift
 //  MODOC
 //
 //  Created by Jeffrey Berthiaume on 11/9/22.
@@ -8,7 +8,7 @@
 import UIKit
 import Speech
 
-extension ViewController {
+extension MODOCViewController {
     
     func speak(_ speechString: String) {
         var str = speechString

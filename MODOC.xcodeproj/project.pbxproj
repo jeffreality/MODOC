@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009B5CC9291BE8FC00C00AE7 /* ViewController+SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CC8291BE8FC00C00AE7 /* ViewController+SpeechRecognition.swift */; };
-		009B5CCB291BE96E00C00AE7 /* ViewController+SpeechSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CCA291BE96E00C00AE7 /* ViewController+SpeechSynthesis.swift */; };
-		009B5CCD291BEA8A00C00AE7 /* ViewController+Dialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CCC291BEA8A00C00AE7 /* ViewController+Dialogue.swift */; };
+		009B5CC9291BE8FC00C00AE7 /* MODOCViewController+SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CC8291BE8FC00C00AE7 /* MODOCViewController+SpeechRecognition.swift */; };
+		009B5CCB291BE96E00C00AE7 /* MODOCViewController+SpeechSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CCA291BE96E00C00AE7 /* MODOCViewController+SpeechSynthesis.swift */; };
+		009B5CCD291BEA8A00C00AE7 /* MODOCViewController+Dialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B5CCC291BEA8A00C00AE7 /* MODOCViewController+Dialogue.swift */; };
 		8C0208D028F35E1B00C50221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0208CF28F35E1B00C50221 /* AppDelegate.swift */; };
-		8C0208D428F35E1B00C50221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0208D328F35E1B00C50221 /* ViewController.swift */; };
+		8C0208D428F35E1B00C50221 /* MODOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0208D328F35E1B00C50221 /* MODOCViewController.swift */; };
 		8C0208D728F35E1B00C50221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0208D528F35E1B00C50221 /* Main.storyboard */; };
 		8C0208D928F35E1E00C50221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0208D828F35E1E00C50221 /* Assets.xcassets */; };
 		8C0208DC28F35E1E00C50221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0208DA28F35E1E00C50221 /* LaunchScreen.storyboard */; };
@@ -20,12 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		009B5CC8291BE8FC00C00AE7 /* ViewController+SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SpeechRecognition.swift"; sourceTree = "<group>"; };
-		009B5CCA291BE96E00C00AE7 /* ViewController+SpeechSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SpeechSynthesis.swift"; sourceTree = "<group>"; };
-		009B5CCC291BEA8A00C00AE7 /* ViewController+Dialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Dialogue.swift"; sourceTree = "<group>"; };
+		009B5CC8291BE8FC00C00AE7 /* MODOCViewController+SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MODOCViewController+SpeechRecognition.swift"; sourceTree = "<group>"; };
+		009B5CCA291BE96E00C00AE7 /* MODOCViewController+SpeechSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MODOCViewController+SpeechSynthesis.swift"; sourceTree = "<group>"; };
+		009B5CCC291BEA8A00C00AE7 /* MODOCViewController+Dialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MODOCViewController+Dialogue.swift"; sourceTree = "<group>"; };
 		8C0208CC28F35E1B00C50221 /* MODOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0208CF28F35E1B00C50221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C0208D328F35E1B00C50221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C0208D328F35E1B00C50221 /* MODOCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODOCViewController.swift; sourceTree = "<group>"; };
 		8C0208D628F35E1B00C50221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C0208D828F35E1E00C50221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0208DB28F35E1E00C50221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,10 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				8C0208CF28F35E1B00C50221 /* AppDelegate.swift */,
-				8C0208D328F35E1B00C50221 /* ViewController.swift */,
-				009B5CCC291BEA8A00C00AE7 /* ViewController+Dialogue.swift */,
-				009B5CCA291BE96E00C00AE7 /* ViewController+SpeechSynthesis.swift */,
-				009B5CC8291BE8FC00C00AE7 /* ViewController+SpeechRecognition.swift */,
+				8C0208D328F35E1B00C50221 /* MODOCViewController.swift */,
+				009B5CCC291BEA8A00C00AE7 /* MODOCViewController+Dialogue.swift */,
+				009B5CCA291BE96E00C00AE7 /* MODOCViewController+SpeechSynthesis.swift */,
+				009B5CC8291BE8FC00C00AE7 /* MODOCViewController+SpeechRecognition.swift */,
 				8C0208E528F3AA1E00C50221 /* DialogueManager.swift */,
 				8CD0298128F8F20700811BA0 /* FaceManager.swift */,
 				8C0208D528F35E1B00C50221 /* Main.storyboard */,
@@ -150,11 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009B5CCB291BE96E00C00AE7 /* ViewController+SpeechSynthesis.swift in Sources */,
-				8C0208D428F35E1B00C50221 /* ViewController.swift in Sources */,
+				009B5CCB291BE96E00C00AE7 /* MODOCViewController+SpeechSynthesis.swift in Sources */,
+				8C0208D428F35E1B00C50221 /* MODOCViewController.swift in Sources */,
 				8CD0298228F8F20700811BA0 /* FaceManager.swift in Sources */,
-				009B5CCD291BEA8A00C00AE7 /* ViewController+Dialogue.swift in Sources */,
-				009B5CC9291BE8FC00C00AE7 /* ViewController+SpeechRecognition.swift in Sources */,
+				009B5CCD291BEA8A00C00AE7 /* MODOCViewController+Dialogue.swift in Sources */,
+				009B5CC9291BE8FC00C00AE7 /* MODOCViewController+SpeechRecognition.swift in Sources */,
 				8C0208D028F35E1B00C50221 /* AppDelegate.swift in Sources */,
 				8C0208E628F3AA1E00C50221 /* DialogueManager.swift in Sources */,
 			);

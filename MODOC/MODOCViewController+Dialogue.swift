@@ -1,5 +1,5 @@
 //
-//  ViewController+Dialogue.swift
+//  MODOCViewController+Dialogue.swift
 //  MODOC
 //
 //  Created by Jeffrey Berthiaume on 11/9/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension ViewController {
+extension MODOCViewController {
     
     func sendUserMessage(str: String) {
         // check to see if the last question had been asked or goodbye was heard, and terminate the session
