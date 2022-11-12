@@ -68,93 +68,71 @@
         <scene sceneID="fFv-r2-5ks">
             <objects>
                 <viewController title="GOODBYE" id="Afz-dO-2fg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iU0-5w-ieu">
+                    <view key="view" contentMode="scaleToFill" id="jz8-Bb-BL4">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="lGP-m5-ckU">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="CDO-Sa-lKH">
-                                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="XcQ-dt-rVz">
-                                                <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="XcQ-dt-rVz" secondAttribute="height" multiplier="1:1" constant="1" id="0Cf-bw-RPc"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-69-38R">
-                                                <rect key="frame" x="0.0" y="59" width="852" height="300"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="GOODBYE ">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" means you need to leave  go away">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.99941999999999998" green="0.98555000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llz-ZN-74Q">
-                                                <rect key="frame" x="590.66666666666663" y="318" width="241.33333333333337" height="41"/>
-                                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="GO TO INTERVIEW &gt;">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="XG2-m1-8dd"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <viewLayoutGuide key="safeArea" id="XPl-99-KV8"/>
-                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="UnN-69-38R" firstAttribute="leading" secondItem="XPl-99-KV8" secondAttribute="leading" id="13r-j5-NN4"/>
-                                            <constraint firstItem="llz-ZN-74Q" firstAttribute="bottom" secondItem="XPl-99-KV8" secondAttribute="bottom" id="3Io-jp-pKY"/>
-                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="bottom" secondItem="XPl-99-KV8" secondAttribute="bottom" id="7fF-2S-eeO"/>
-                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="centerX" secondItem="XPl-99-KV8" secondAttribute="centerX" id="Oeg-rZ-Jwf"/>
-                                            <constraint firstItem="XPl-99-KV8" firstAttribute="bottom" secondItem="UnN-69-38R" secondAttribute="bottom" id="POy-eH-9K7"/>
-                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="top" secondItem="XPl-99-KV8" secondAttribute="top" id="Uf0-6k-aUE"/>
-                                            <constraint firstItem="XPl-99-KV8" firstAttribute="trailing" secondItem="UnN-69-38R" secondAttribute="trailing" id="o6S-jR-YDN"/>
-                                            <constraint firstItem="XPl-99-KV8" firstAttribute="trailing" secondItem="llz-ZN-74Q" secondAttribute="trailing" constant="20" id="pNB-6Q-m7s"/>
-                                            <constraint firstItem="llz-ZN-74Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XcQ-dt-rVz" secondAttribute="trailing" constant="8" symbolic="YES" id="x5k-jW-lTw"/>
-                                            <constraint firstItem="XcQ-dt-rVz" firstAttribute="centerY" secondItem="XPl-99-KV8" secondAttribute="centerY" id="yFt-8m-Yes"/>
-                                            <constraint firstItem="UnN-69-38R" firstAttribute="top" secondItem="XPl-99-KV8" secondAttribute="top" id="yUS-eu-XQ2"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <viewLayoutGuide key="safeArea" id="fXF-TT-Iin"/>
-                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxL-g2-ego">
+                                <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GOODBYE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" means you need to leave  go away">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99941999999999998" green="0.98555000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz6-29-lt9">
+                                <rect key="frame" x="590.66666666666663" y="318" width="241.33333333333337" height="41"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO TO INTERVIEW &gt;">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="hm7-Yc-9lv"/>
-                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cBB-Hb-BNu"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.77440359690000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cBB-Hb-BNu" firstAttribute="bottom" secondItem="NxL-g2-ego" secondAttribute="bottom" id="5J0-po-yVx"/>
+                            <constraint firstItem="cBB-Hb-BNu" firstAttribute="trailing" secondItem="vz6-29-lt9" secondAttribute="trailing" constant="20" id="6I5-bB-7UZ"/>
+                            <constraint firstItem="vz6-29-lt9" firstAttribute="bottom" secondItem="cBB-Hb-BNu" secondAttribute="bottom" id="8nn-Cg-6GW"/>
+                            <constraint firstItem="NxL-g2-ego" firstAttribute="top" secondItem="cBB-Hb-BNu" secondAttribute="top" id="Ip0-bb-k3K"/>
+                            <constraint firstItem="cBB-Hb-BNu" firstAttribute="trailing" secondItem="NxL-g2-ego" secondAttribute="trailing" id="PTO-hA-1y6"/>
+                            <constraint firstItem="vz6-29-lt9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cBB-Hb-BNu" secondAttribute="leading" symbolic="YES" id="eoT-JY-rsV"/>
+                            <constraint firstItem="NxL-g2-ego" firstAttribute="leading" secondItem="cBB-Hb-BNu" secondAttribute="leading" id="xjg-wj-IXl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YT1-ep-Lpw"/>
                 </viewController>
@@ -166,22 +144,16 @@
         <scene sceneID="ZBn-pE-xyh">
             <objects>
                 <viewController title="HELLO MODOC" id="G6d-a0-hoe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bai-eP-LZq">
+                    <view key="view" contentMode="scaleToFill" id="why-wd-jPg">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="uuL-Fw-W9D">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            <view contentMode="scaleToFill" id="eEZ-jj-kFz">
+                                <rect key="frame" x="-3" y="-3" width="853" height="394"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="T0Q-lm-2AN">
-                                        <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="T0Q-lm-2AN" secondAttribute="height" multiplier="1:1" constant="1" id="ixL-ry-7hY"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBo-uD-hzA">
-                                        <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZB-MP-ugL">
+                                        <rect key="frame" x="0.0" y="59" width="853" height="303"/>
                                         <attributedString key="attributedText">
                                             <fragment content="to begin, simply say:">
                                                 <attributes>
@@ -208,7 +180,7 @@
                                             </fragment>
                                             <fragment content="HELLO MODOC">
                                                 <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -216,36 +188,29 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-eD-rCl">
-                                        <rect key="frame" x="730" y="318" width="102" height="41"/>
-                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xi-GE-R6P">
+                                        <rect key="frame" x="731" y="321" width="102" height="41"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="NEXT &gt;">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="Afz-dO-2fg" kind="show" animates="NO" id="xe9-hG-iLX"/>
-                                        </connections>
                                     </button>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="Zku-qB-3Op"/>
-                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <viewLayoutGuide key="safeArea" id="gfd-BY-Q4F"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.77440359690000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="vBo-uD-hzA" firstAttribute="leading" secondItem="Zku-qB-3Op" secondAttribute="leading" id="5Li-oq-stx"/>
-                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="centerY" secondItem="Zku-qB-3Op" secondAttribute="centerY" id="6fh-II-u4I"/>
-                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="bottom" secondItem="Zku-qB-3Op" secondAttribute="bottom" id="JkS-Mf-Oeo"/>
-                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="trailing" secondItem="5RO-eD-rCl" secondAttribute="trailing" constant="20" id="YmY-wH-Jmx"/>
-                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="trailing" secondItem="vBo-uD-hzA" secondAttribute="trailing" id="heF-ag-jhL"/>
-                                    <constraint firstItem="5RO-eD-rCl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T0Q-lm-2AN" secondAttribute="trailing" constant="8" symbolic="YES" id="iqs-0x-YEh"/>
-                                    <constraint firstItem="vBo-uD-hzA" firstAttribute="top" secondItem="Zku-qB-3Op" secondAttribute="top" id="lsw-2J-zlg"/>
-                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="centerX" secondItem="Zku-qB-3Op" secondAttribute="centerX" id="r5i-p5-Gjy"/>
-                                    <constraint firstItem="T0Q-lm-2AN" firstAttribute="top" secondItem="Zku-qB-3Op" secondAttribute="top" id="rd1-4m-T4A"/>
-                                    <constraint firstItem="Zku-qB-3Op" firstAttribute="bottom" secondItem="vBo-uD-hzA" secondAttribute="bottom" id="wIW-pd-7dD"/>
-                                    <constraint firstItem="5RO-eD-rCl" firstAttribute="bottom" secondItem="Zku-qB-3Op" secondAttribute="bottom" id="x00-er-aj6"/>
+                                    <constraint firstItem="XZB-MP-ugL" firstAttribute="top" secondItem="gfd-BY-Q4F" secondAttribute="top" id="1hI-Fc-z6F"/>
+                                    <constraint firstItem="gfd-BY-Q4F" firstAttribute="bottom" secondItem="XZB-MP-ugL" secondAttribute="bottom" id="Ck8-ll-pd4"/>
+                                    <constraint firstItem="6Xi-GE-R6P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gfd-BY-Q4F" secondAttribute="leading" symbolic="YES" id="IN5-4U-ice"/>
+                                    <constraint firstItem="gfd-BY-Q4F" firstAttribute="trailing" secondItem="6Xi-GE-R6P" secondAttribute="trailing" constant="20" id="Igr-mo-qUe"/>
+                                    <constraint firstItem="XZB-MP-ugL" firstAttribute="leading" secondItem="gfd-BY-Q4F" secondAttribute="leading" id="Nhq-lt-LmS"/>
+                                    <constraint firstItem="gfd-BY-Q4F" firstAttribute="trailing" secondItem="XZB-MP-ugL" secondAttribute="trailing" id="gOh-wP-ZXN"/>
+                                    <constraint firstItem="6Xi-GE-R6P" firstAttribute="bottom" secondItem="gfd-BY-Q4F" secondAttribute="bottom" id="ibb-yj-kwl"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="i2H-nP-8i3"/>
+                        <viewLayoutGuide key="safeArea" id="OL5-by-0c6"/>
                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Zr-lk-fWW"/>
@@ -258,27 +223,14 @@
         <scene sceneID="JTl-tk-TKM">
             <objects>
                 <viewController title="Welcome to HYDRA" id="S9F-tO-4lv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eJX-bl-N72">
+                    <view key="view" contentMode="scaleToFill" id="RqV-7A-Kwt">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="mLY-Ca-2P6">
-                                <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="mLY-Ca-2P6" secondAttribute="height" multiplier="1:1" constant="1" id="Y9P-GQ-y82"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK7-du-q3E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M78-iU-fdU">
                                 <rect key="frame" x="0.0" y="59" width="852" height="300"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome to ">
-                                        <attributes>
-                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="48" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="HYDRA">
                                         <attributes>
                                             <color key="NSColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
@@ -286,8 +238,23 @@
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  MODOC will be interviewing you  to see if you would be a good fit  for this organization.">
+                                    <fragment content="A.I.M.">
                                         <attributes>
+                                            <color key="NSColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="MODOC will be interviewing you  to see if you would be a good fit  for this organization.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="24" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -295,32 +262,24 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-pa-H6c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY9-pX-0Gp">
                                 <rect key="frame" x="672" y="318" width="160" height="41"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="CONTINUE &gt;">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="G6d-a0-hoe" kind="show" animates="NO" id="2TV-Yo-qBn"/>
-                                </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vU3-H1-Ieg"/>
-                        <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3yx-Ff-qlS"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.77440359690000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="trailing" secondItem="MK7-du-q3E" secondAttribute="trailing" id="17U-aq-lXk"/>
-                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="centerY" secondItem="vU3-H1-Ieg" secondAttribute="centerY" id="2dt-0B-fnK"/>
-                            <constraint firstItem="e0p-pa-H6c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mLY-Ca-2P6" secondAttribute="trailing" constant="8" symbolic="YES" id="32s-jt-CJK"/>
-                            <constraint firstItem="MK7-du-q3E" firstAttribute="top" secondItem="vU3-H1-Ieg" secondAttribute="top" id="5FB-oj-xTx"/>
-                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="trailing" secondItem="e0p-pa-H6c" secondAttribute="trailing" constant="20" id="6Yw-tP-NYC"/>
-                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="centerX" secondItem="vU3-H1-Ieg" secondAttribute="centerX" id="WgN-g8-MKM"/>
-                            <constraint firstItem="vU3-H1-Ieg" firstAttribute="bottom" secondItem="MK7-du-q3E" secondAttribute="bottom" id="eRk-we-XgT"/>
-                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="bottom" secondItem="vU3-H1-Ieg" secondAttribute="bottom" id="nZg-s5-xw9"/>
-                            <constraint firstItem="MK7-du-q3E" firstAttribute="leading" secondItem="vU3-H1-Ieg" secondAttribute="leading" id="rz2-Bq-5cj"/>
-                            <constraint firstItem="mLY-Ca-2P6" firstAttribute="top" secondItem="vU3-H1-Ieg" secondAttribute="top" id="twW-qv-ioY"/>
-                            <constraint firstItem="e0p-pa-H6c" firstAttribute="bottom" secondItem="vU3-H1-Ieg" secondAttribute="bottom" id="yR3-gt-FaS"/>
+                            <constraint firstItem="M78-iU-fdU" firstAttribute="leading" secondItem="3yx-Ff-qlS" secondAttribute="leading" id="8R8-Ld-uMk"/>
+                            <constraint firstItem="M78-iU-fdU" firstAttribute="top" secondItem="3yx-Ff-qlS" secondAttribute="top" id="CN6-ue-uUM"/>
+                            <constraint firstItem="3yx-Ff-qlS" firstAttribute="bottom" secondItem="M78-iU-fdU" secondAttribute="bottom" id="QI8-RR-Z9W"/>
+                            <constraint firstItem="3yx-Ff-qlS" firstAttribute="trailing" secondItem="yY9-pX-0Gp" secondAttribute="trailing" constant="20" id="Rm2-70-YKW"/>
+                            <constraint firstItem="yY9-pX-0Gp" firstAttribute="bottom" secondItem="3yx-Ff-qlS" secondAttribute="bottom" id="ijT-jz-UIe"/>
+                            <constraint firstItem="3yx-Ff-qlS" firstAttribute="trailing" secondItem="M78-iU-fdU" secondAttribute="trailing" id="zxO-if-iZE"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -330,12 +289,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hydra" width="955" height="954"/>
         <image name="modok_face_botLayer" width="2732" height="2048"/>
         <image name="modok_face_rest_frame_01" width="2732" height="2048"/>
         <image name="modok_face_topLayer" width="2732" height="2048"/>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

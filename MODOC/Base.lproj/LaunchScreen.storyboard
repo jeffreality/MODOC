@@ -16,20 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hydra" translatesAutoresizingMaskIntoConstraints="NO" id="vrT-OV-daw">
-                                <rect key="frame" x="275.66666666666669" y="59" width="301.00000000000006" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="vrT-OV-daw" secondAttribute="height" multiplier="1:1" constant="1" id="RwK-UM-Ipr"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AIM" translatesAutoresizingMaskIntoConstraints="NO" id="vrT-OV-daw">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dka-f9-MxL"/>
                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vrT-OV-daw" firstAttribute="bottom" secondItem="dka-f9-MxL" secondAttribute="bottom" id="5Kb-PD-uY1"/>
-                            <constraint firstItem="vrT-OV-daw" firstAttribute="top" secondItem="dka-f9-MxL" secondAttribute="top" id="9Dn-fE-7lV"/>
-                            <constraint firstItem="vrT-OV-daw" firstAttribute="centerY" secondItem="dka-f9-MxL" secondAttribute="centerY" id="9Ho-Qt-l4L"/>
-                            <constraint firstItem="vrT-OV-daw" firstAttribute="centerX" secondItem="dka-f9-MxL" secondAttribute="centerX" id="MV4-9d-2mm"/>
+                            <constraint firstItem="vrT-OV-daw" firstAttribute="top" secondItem="bHt-SN-mR0" secondAttribute="top" id="77G-Zc-C4v"/>
+                            <constraint firstAttribute="trailing" secondItem="vrT-OV-daw" secondAttribute="trailing" id="JbE-NG-3ms"/>
+                            <constraint firstItem="vrT-OV-daw" firstAttribute="bottom" secondItem="bHt-SN-mR0" secondAttribute="bottom" id="Vlt-pj-99g"/>
+                            <constraint firstItem="vrT-OV-daw" firstAttribute="leading" secondItem="bHt-SN-mR0" secondAttribute="leading" id="nQt-gd-2gn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hydra" width="955" height="954"/>
+        <image name="AIM" width="495" height="296"/>
     </resources>
 </document>

@@ -45,9 +45,9 @@ class DialogueManager {
         
         addDialogue(
             question: [
-                "Are you interested in joining Hydra?",
-                "Would you like to work for Hydra?",
-                "Would you consider Hydra as your new employer?"
+                "Are you interested in joining Aim?",
+                "Would you like to work for Aim?",
+                "Would you consider Aim as your new employer?"
             ], answers: [
                 Answer(
                     answers: answerYes(),
@@ -141,7 +141,7 @@ class DialogueManager {
                 Answer(
                     answers: answerNo(),
                     responses: [
-                        "Then you should not join Hydra. Goodbye."
+                        "Then you should not join Aim. Goodbye."
                     ],
                     shouldTerminate: true
                 ),
@@ -167,7 +167,7 @@ class DialogueManager {
                 Answer(
                     answers: answerNo(),
                     responses: [
-                        "You might not make it very long at Hydra."
+                        "You might not make it very long at Aim."
                     ]
                 ),
                 Answer(
