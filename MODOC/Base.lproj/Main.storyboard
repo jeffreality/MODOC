@@ -120,6 +120,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="GO TO INTERVIEW &gt;">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2ko-Wu-QcA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cBB-Hb-BNu"/>
@@ -149,11 +152,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="eEZ-jj-kFz">
-                                <rect key="frame" x="-3" y="-3" width="853" height="394"/>
+                                <rect key="frame" x="-5" y="-5" width="855" height="393"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZB-MP-ugL">
-                                        <rect key="frame" x="0.0" y="59" width="853" height="303"/>
+                                        <rect key="frame" x="0.0" y="59" width="855" height="305"/>
                                         <attributedString key="attributedText">
                                             <fragment content="to begin, simply say:">
                                                 <attributes>
@@ -189,12 +192,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xi-GE-R6P">
-                                        <rect key="frame" x="731" y="321" width="102" height="41"/>
+                                        <rect key="frame" x="733" y="323" width="102" height="41"/>
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="NEXT &gt;">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Afz-dO-2fg" kind="show" animates="NO" id="PGg-SP-KVW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="gfd-BY-Q4F"/>
@@ -211,7 +217,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OL5-by-0c6"/>
-                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.77440359690000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Zr-lk-fWW"/>
                 </viewController>
@@ -269,6 +275,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="CONTINUE &gt;">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="G6d-a0-hoe" kind="show" animates="NO" id="in7-6Q-Bly"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3yx-Ff-qlS"/>
